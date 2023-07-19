@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v3.14.1.
+ * Original file: /npm/storage@0.2.0/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+"use strict";function Storage(t){this.cache=t||{}}module.exports=Storage,Storage.prototype.set=function(t,e){return this.cache[t]=e,this},Storage.prototype.get=function(t){return this.cache[t]};
+//# sourceMappingURL=/sm/e812565aef6601217828edeee70555439b3cf73754529dab8b0fe831521ecd4d.map
