@@ -43,12 +43,14 @@ contract TokenContract is ERC20Capped, ERC20Burnable {
     }
     function transferTokens(address to, uint256 amount) public {
         _transfer(msg.sender, to, amount);
+        emit TokenTransferred(msg.sender, to, amount);
     }
     function approveTokens(address spender, uint256 amount) public {
         _approve(msg.sender, spender, amount);
     }
        function transferFromOneAddressToAnother(address from, address to, uint256 amount) public {
         transferFrom(from, to, amount);
+        emit TokenTransferred(from, to, amount);
     }
     modifier onlyOwner {
         require(msg.sender == owner, "Only the owner can call this function");
