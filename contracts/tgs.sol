@@ -15,6 +15,7 @@ contract TokenContract is ERC20Capped, ERC20Burnable {
         _mint(owner, 70000000 * (10 ** decimals()));
         blockReward = reward * (10 ** decimals());
     }
+    event TokenTransferred(address indexed from, address indexed to, uint256 value);
       function getTotalSupply() public view returns (uint256) {
         return totalSupply();
     }
